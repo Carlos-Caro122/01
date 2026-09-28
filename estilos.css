@@ -1,25 +1,25 @@
+/* Reset básico y centrado en pantalla */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
- body {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #ffffff;           /* Ajusta el color del texto si tu fondo es oscuro o claro */
+  color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-  /* --- CONFIGURACIÓN DE LA IMAGEN DE FONDO --- */
-  background-image: url("img/fondo.jpg"); /* O url("img/fondo.jpg") si está en una carpeta */
-  background-size: cover;            /* Cubre toda la pantalla adaptándose a la resolución */
-  background-position: center;       /* Centra la imagen */
-  background-repeat: no-repeat;      /* Evita que la imagen se repita */
-  background-attachment: fixed;      /* Mantiene el fondo fijo al hacer scroll */
+  /* Configuración de la imagen de fondo */
+  background-image: url("img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
 
 .contenedor {
   text-align: center;
@@ -38,11 +38,7 @@
   animation: desvanecer 4s ease-in-out forwards;
 }
 
-/* Animación: dura 4s en total
-   - De 0% a 20%: Aparece (Fade In)
-   - De 20% a 80%: Permanece visible
-   - De 80% a 100%: Desaparece (Fade Out)
-*/
+/* Animación: dura 4s en total */
 @keyframes desvanecer {
   0% {
     opacity: 0;
