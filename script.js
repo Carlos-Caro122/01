@@ -3,6 +3,8 @@ const mensajes = [
   "Hola",
   "Feliz cumpleaños...",
   "atrasado",
+  "No se que más decir",
+  "Que la pases bien",
   
 ];
 
