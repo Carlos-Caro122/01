@@ -31,7 +31,7 @@ body {
   font-size: 3.5rem; /* Letra más grande (puedes subir a 4rem si la quieres aún mayor) */
   font-weight: 700;  /* Un poco más gruesa para resaltar */
   color: #000000;    /* Letras en color negro */
-  opacity: 1;        /* Invisible por defecto */
+  opacity: 0;        /* Invisible por defecto */
 }
 
 /* Clase dinámica que aplica la animación */
