@@ -1,1 +1,58 @@
+/* Reset básico y centrado en pantalla */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0f172a; /* Fondo oscuro */
+  color: #f8fafc;           /* Texto claro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilo del texto */
+.texto-animado {
+  font-size: 2.5rem;
+  font-weight: 600;
+  opacity: 0; /* Invisible por defecto */
+}
+
+/* Clase dinámica que aplica la animación */
+.mostrar {
+  animation: desvanecer 4s ease-in-out forwards;
+}
+
+/* Animación: dura 4s en total
+   - De 0% a 20%: Aparece (Fade In)
+   - De 20% a 80%: Permanece visible
+   - De 80% a 100%: Desaparece (Fade Out)
+*/
+@keyframes desvanecer {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
 
