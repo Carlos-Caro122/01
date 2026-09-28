@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #ffffff;
+  color: #000000; /* Color del texto general en negro */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   /* Configuración de la imagen de fondo */
@@ -28,9 +28,10 @@ body {
 
 /* Estilo del texto */
 .texto-animado {
-  font-size: 2.5rem;
-  font-weight: 600;
-  opacity: 0; /* Invisible por defecto */
+  font-size: 3.5rem; /* Letra más grande (puedes subir a 4rem si la quieres aún mayor) */
+  font-weight: 700;  /* Un poco más gruesa para resaltar */
+  color: #000000;    /* Letras en color negro */
+  opacity: 0;        /* Invisible por defecto */
 }
 
 /* Clase dinámica que aplica la animación */
@@ -57,4 +58,3 @@ body {
     transform: translateY(-10px);
   }
 }
-
