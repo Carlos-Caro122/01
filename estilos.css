@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #000000; /* Color del texto general en negro */
+  color: #000000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   /* Configuración de la imagen de fondo */
@@ -28,10 +28,17 @@ body {
 
 /* Estilo del texto */
 .texto-animado {
-  font-size: 3.5rem; /* Letra más grande (puedes subir a 4rem si la quieres aún mayor) */
-  font-weight: 700;  /* Un poco más gruesa para resaltar */
-  color: #000000;    /* Letras en color negro */
-  opacity: 0;        /* Invisible por defecto */
+  font-size: 4.5rem; /* Tamaño de letra extra grande */
+  font-weight: 800;  /* Letra bien gruesa/negrita */
+  color: #000000 !important;
+  opacity: 0;
+}
+
+/* Ajuste automático para pantallas de celular */
+@media (max-width: 600px) {
+  .texto-animado {
+    font-size: 3.2rem; /* Se ajusta para que no se salga de la pantalla del móvil */
+  }
 }
 
 /* Clase dinámica que aplica la animación */
@@ -39,7 +46,7 @@ body {
   animation: desvanecer 4s ease-in-out forwards;
 }
 
-/* Animación: dura 4s en total */
+/* Animación de desvanecimiento */
 @keyframes desvanecer {
   0% {
     opacity: 0;
