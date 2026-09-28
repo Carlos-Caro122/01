@@ -1,9 +1,11 @@
 // Listado de mensajes que se van a mostrar
 const mensajes = [
-  "¡Bienvenido a la página!",
-  "Este es el segundo mensaje.",
-  "Aquí viene el tercer mensaje...",
-  "¡Gracias por visitar!"
+  "Hola",
+  "Feliz cumpleaños...",
+  "atrasado",
+  "No se que más decir"
+  "que la la pases bien'
+  
 ];
 
 let indiceActual = 0;
