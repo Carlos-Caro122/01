@@ -13,7 +13,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   /* --- CONFIGURACIÓN DE LA IMAGEN DE FONDO --- */
-  background-image: url("fondo.jpg"); /* O url("img/fondo.jpg") si está en una carpeta */
+  background-image: url("img/fondo.jpg"); /* O url("img/fondo.jpg") si está en una carpeta */
   background-size: cover;            /* Cubre toda la pantalla adaptándose a la resolución */
   background-position: center;       /* Centra la imagen */
   background-repeat: no-repeat;      /* Evita que la imagen se repita */
